@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+html {
+    background-color: rgb(107, 185, 240);
+    --title-font: 'Bungee Inline', cursive;
+}
+
+body {
+    padding: 0;
+}
+
+.container {
+    border: 1px red solid;
+}
+
+.container p {
+    color: rgb(174, 168, 211);
+}
+
+.navbar {
+    border: 1px red solid;
+}
+
+.navbar-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-brand {}
+
+img {
+    height: 60px;
+}
+
+.first-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: url("http://thesweetsetup.com/wp-content/uploads/2015/02/Grocery-App-Hero-6.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.second-page {
+    background-color: rgb(103, 128, 159);
+    height: 100%;
+}
+
+.barcode {
+    height: 100px;
+    width: 200px;
+    margin: 40px auto;
+    background: url("/images/barcode.png") no-repeat center center;
+    background-size: cover;
+}
+
+div {
+    font-family: var(--title-font);
+    font-size: 30px;
+    text-align: center;
+}
