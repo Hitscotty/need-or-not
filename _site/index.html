@@ -5,10 +5,13 @@
 
         <link rel="icon" type="image/png" href="images/needornot.png">
         <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
-        <script src="jquery-1.12.4.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="/javascripts/piechart.js"></script>
 
-        <!-- <script src="javascripts/canvasjs-1.9.2/canvasjs.min.js"></script> -->
-        <!--  <script src="javascripts/piechart.js"></script> -->
+        <!-- Pie Chart -->
+        <!--
+        <script src="javascripts/canvasjs-1.9.2/canvasjs.min.js"></script>
+        <script src="javascripts/piechart.js"></script> -->
 
         <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet"/>
 
@@ -36,7 +39,8 @@
     <body>
 
         <!-- navbar-->
-        <header class="header special">
+        <header>
+
             <div role="navigation" class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
 
@@ -70,9 +74,20 @@
         </section>
 
         <section class="second-page">
-            <div id="chartContainer" style="height:100%; width: 100%;"></div>
-        </section>
 
-    </body>
+            <div class="second-page-wrapper">
 
-</html>
+                <div class="images">
+                    <div class="frame">
+                        <div class="image"></div>
+                    </div>
+                    <!--<div class="product"></div>-->
+                </div>
+
+                <div id="pieChart" class="chart"></div>
+
+            </section>
+
+        </body>
+
+    </html>
