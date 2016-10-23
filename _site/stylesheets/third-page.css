@@ -1,0 +1,29 @@
+.third-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.third-page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+}
+
+.titles-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titles-wrapper h1 {
+    font-size: 22px;
+    margin: 100px;
+    font-family: 'Bungee Inline', cursive;
+}
+
+.chart {
+    margin: 30px;
+}

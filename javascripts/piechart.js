@@ -1,11 +1,19 @@
 
 
-
 $(function(){
   $("#pieChart").drawPieChart([
-    { title: "need",         value : 180,  color: "green" },
-    { title: "not", value:  60,   color: "red" }
+    { title: "NEED",         value : 180,  color: "green" },
+    { title: "NOT", value:  60,   color: "red" }
   ]);
+  $(".third-page").append("<h1 style='color: red'> Not ✖</h1>");
+
+  $("#companyPie").drawPieChart([
+    { title: "NOT",         value : 380,  color: "red" },
+    { title: "NEED", value:  160,   color: "green" }
+  ]);
+
+  // 'color: red'> Not ✖
+  // 'color: green'> Need ✔
 });
 
 

@@ -1,19 +1,59 @@
 @import url("/javascripts/piechart.js");
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
 
 /* main page */
+
+html {
+    --image-info: url("https://images-na.ssl-images-amazon.com/images/I/61oqP3wQsiL._SX350_BO1,204,203,200_.jpg") no-repeat center center;
+    --font: 'Bungee Inline', cursive;
+}
+
+.second-page {
+    background-color: white;
+}
 
 .second-page-wrapper {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: inherit;
+    flex-direction: column;
+    background-color: white;
 }
 
-.product {
-    width: 450px;
-    height: 450px;
-    background-color: white;
+.product-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.product-image {
+    background: var(--image-info);
+    height: 230px;
+    width: 230px;
+    margin: 25px;
+    border: 5px transparent solid;
+}
+
+.product-info {
+    height: 230px;
+    width: 230px;
+    margin: 25px;
+    border: 5px transparent solid;
+}
+
+.frame {
+    width: 100%;
+}
+
+iframe {
+    width: 60%;
+    height: 200px;
+    background-size: 0;
+    frameBorder: 0;
 }
 
 

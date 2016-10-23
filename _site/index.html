@@ -5,8 +5,12 @@
 
         <link rel="icon" type="image/png" href="images/needornot.png">
         <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="/javascripts/piechart.js"></script>
+        <script src="/javascripts/sendform.js"></script>
+        <script src="/javascripts/submitbutton.js"></script>
+        <script src="/javascripts/main.js"></script>
 
         <!-- Pie Chart -->
         <!--
@@ -27,8 +31,12 @@
         <!-- owl carousel-->
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/owl.theme.css">
+
         <!-- plugins-->
         <!-- test end -->
+        <!-- bootstraps -->
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
 
     </head>
 
@@ -41,11 +49,11 @@
         <!-- navbar-->
         <header>
 
-            <div role="navigation" class="navbar navbar-default navbar-fixed-top">
+            <div role="navigation" class="navbar navbar-fixed-top">
                 <div class="container">
 
                     <div class="navbar-header">
-                        <a href="#all" class="navbar-brand scroll-to">
+                        <a href="#main_window" class="navbar-brand scroll-to">
                             <img src="images/needornot.png" alt="logo"></img>
                             <span class="sr-only">Go to homepage</span>
                         </a>
@@ -57,18 +65,21 @@
             </div>
         </header>
 
-        <section class="first-page">
+        <section id="main_window" class="first-page">
             <div class="first-page-wrapper">
-
-                <div class="container">
-                    <p>
-                        Need or Not
-                    </p>
-                </div>
 
                 <div class="barcode"></div>
 
-                <button type="button" class="btn btn-success">Submit</button>
+                <form class="fileupload fileupload-new" data-provides="fileupload">
+                    <span class="btn btn-primary btn-file">
+                        <span class="fileupload-new">Select file</span>
+                        <span class="fileupload-exists">Change</span>
+                        <input type="file"/></span>
+                    <span class="fileupload-preview"></span>
+                    <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+                </form>
+
+                <!-- <button type="button" class="btn btn-success">Submit</button> -->
 
             </div>
         </section>
@@ -77,17 +88,42 @@
 
             <div class="second-page-wrapper">
 
-                <div class="images">
-                    <div class="frame">
-                        <div class="image"></div>
+                <div class="product-wrapper">
+
+                    <div id="pimage" class="product-image"></div>
+                    <div class="product-info">
+                        <h2 id="product">
+                            Product
+                        </h2>
+                        <h2 id="company">
+                            Company
+                        </h2>
+
                     </div>
-                    <!--<div class="product"></div>-->
                 </div>
+                <div class="frame">
+                    <iframe frameBorder="0" src=" https://www.amazon.com/reviews/iframe?akid=AKIAJFMIBB4575NHLQGA&alinkCode=xm2&asin=B004HFS6Z0&atag=needornot-20&exp=2017-06-01T22%3A32%3A53Z&v=2&sig=pxn6bbln%2B%2FVTPJdj8oCcXvjTHmo3spkUMjbQMPbhCKI%3D"></iframe>
 
+                </div>
+            </div>
+
+        </section>
+
+        <section class="third-page">
+            <div class="titles-wrapper">
+                <h1>
+                    Product Analysis</h1>
+                <h1>
+                    Company Analysis</h1>
+
+            </div>
+            <div class="third-page-wrapper">
                 <div id="pieChart" class="chart"></div>
+                <div id="companyPie" class="chart"></div>
+            </div>
 
-            </section>
+        </section>
 
-        </body>
+    </body>
 
-    </html>
+</html>
