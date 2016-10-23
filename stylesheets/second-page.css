@@ -1,5 +1,6 @@
 @import url("/javascripts/piechart.js");
-.second-page {}
+
+/* main page */
 
 .second-page-wrapper {
     height: 100%;
@@ -14,6 +15,12 @@
     height: 450px;
     background-color: white;
 }
+
+
+/* main page end */
+
+
+/* Pie Chart CSS */
 
 .chart {
     width: 350px;
@@ -64,7 +71,10 @@
 }
 
 
-/* pic rames */
+/* Pie Chart CSS END */
+
+
+/* Picture Frame CSS */
 
 .images {
     min-height: 300px;
@@ -90,3 +100,6 @@
     background-color: white;
     margin: auto;
 }
+
+
+/* Picture Frame CSS END */
