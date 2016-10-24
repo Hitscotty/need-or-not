@@ -11,6 +11,7 @@
         <script src="/javascripts/sendform.js"></script>
         <script src="/javascripts/submitbutton.js"></script>
         <script src="/javascripts/main.js"></script>
+        <script src="/scripts/main.js"></script>
 
         <!-- Pie Chart -->
         <!--
@@ -53,7 +54,7 @@
                 <div class="container">
 
                     <div class="navbar-header">
-                        <a href="#main_window" class="navbar-brand scroll-to">
+                        <a href="/" class="navbar-brand scroll-to">
                             <img src="images/needornot.png" alt="logo"></img>
                             <span class="sr-only">Go to homepage</span>
                         </a>
@@ -69,22 +70,22 @@
             <div class="first-page-wrapper">
 
                 <div class="barcode"></div>
-
-                <form class="fileupload fileupload-new" data-provides="fileupload">
+                <form class="fileupload fileupload-new" data-provides="fileupload" action="http://69.164.219.69/File_upload" method="POST" enctype="multipart/form-data">
                     <span class="btn btn-primary btn-file">
                         <span class="fileupload-new">Select file</span>
                         <span class="fileupload-exists">Change</span>
-                        <input type="file"/></span>
+                        <input type="file">
+                    </span>
                     <span class="fileupload-preview"></span>
                     <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-                </form>
+                    <input class="btn btn-success" type="submit" value="Submit File">
 
-                <!-- <button type="button" class="btn btn-success">Submit</button> -->
+                </form>
 
             </div>
         </section>
 
-        <section class="second-page">
+        <section id="second" class="second-page">
 
             <div class="second-page-wrapper">
 
@@ -92,12 +93,12 @@
 
                     <div id="pimage" class="product-image"></div>
                     <div class="product-info">
-                        <h2 id="product">
-                            Product
-                        </h2>
-                        <h2 id="company">
-                            Company
-                        </h2>
+                        <p id="product">
+                            The Art of Computer Programming
+                        </p>
+                        <p id="company">
+                            MEGABOOKS
+                        </p>
 
                     </div>
                 </div>
@@ -121,6 +122,12 @@
                 <div id="pieChart" class="chart"></div>
                 <div id="companyPie" class="chart"></div>
             </div>
+
+        </section>
+
+        <section class="fourth-page">
+
+            <div class="fourth-page wrapper"></div>
 
         </section>
 

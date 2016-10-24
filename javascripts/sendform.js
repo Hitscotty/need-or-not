@@ -8,8 +8,8 @@ $(document).ready(function() {
 
  $(document).ajaxComplete(function(){
   $('#loading').hide();
-  $('#main_window').fadeIn(500);
-  $('#result').fadeIn(500);
+  $('#second').fadeIn(500);
+  $('#second').fadeIn(500);
  });
 
  $("form").submit(function(event) {
@@ -17,7 +17,7 @@ $(document).ready(function() {
 
   var formData = new FormData($(this)[0]);
   $.ajax({
-   url: "http://127.0.0.1:8080/file_upload",
+   url: "http://69.164.219.69/File_upload",
    type: "POST",
    data: formData,
    contentType: false,

@@ -2,7 +2,7 @@
 
 $(function(){
   $("#pieChart").drawPieChart([
-    { title: "NEED",         value : 180,  color: "green" },
+    { title: "NEED",         value : 46.3580,  color: "green" },
     { title: "NOT", value:  60,   color: "red" }
   ]);
   $(".third-page").append("<h1 style='color: red'> Not ✖</h1>");
